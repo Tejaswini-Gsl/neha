@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Stout case studies</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+    body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+    </style>
+  </head>
+<body class="w3-light-grey w3-content" style="max-width:1600px">
+
+<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-collapse w3-white w3-animate-left" style="z-index:3;width:300px;" id="mySidebar"><br>
+  <div class="w3-container">
+    <a href="#" onclick="w3_close()" class="w3-hide-large w3-right w3-jumbo w3-padding w3-hover-grey" title="close menu">
+      <i class="fa fa-remove"></i>
+    </a>
+    <h4><b>options</b></h4>
+   
+  </div>
+  <div class="w3-bar-block">
+    <a href="#Description(1)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">Description Casestudy 1</a> 
+    <a href="#Data" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Data Visualization</a> 
+    <a href="#code" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Code</a>
+    <a href="#Enhancements" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Enhancements</a>
+
+    <a href="#Description(2)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-text-teal">Description Casestudy 2</a> 
+    <a href="#Data(2)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Data Visualization</a> 
+    <a href="#code(2)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Code </a>
+    <a href="#Enhancements(2)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding">Observations</a>
+
+  </div>
+
+</nav>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="w3-overlay w3-hide-large w3-animate-opacity" onclick="w3_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin-left:300px">
+
+  <!-- Header -->
+  <header id="Description(1)">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Case study-1</b></h1>
+    <h2><b>Loan data from lending club</b></h2>
+    <h3><b>Description:</b></h3>
+    <p>Borrowers can make personal loans through the lending club platform.
+       Based on the information provided by borrowers, investors can search for and select loans in which to invest. 
+       Each borrower receives a grade depending on how frequently they make and repay loans, which is only visible to investors.
+        The interest rate charged to each borrower varies depending on their grade.
+       When the investor is ready to invest, the loan is assigned to the borrower based on all of the information.</p>
+       <p>This dataframe consists of 10,000 observations with 55 variables where each variable describes
+        information regarding borrower.These columns are described in the dictionary provided by openintro</p>
+
+   
+    </div>
+  </header>
+
+  <!-- visualization  -->
+  <div class="w3-row-padding w3-padding-16" id="Data">
+                  <div class="container">
+                    <div class="row">
+                      <div class="col">
+                        <h1><b>Data Visualization</b></h1>
+                        <h2><b>1. Bar Plot on loan amount and Month</b></h2>
+                        <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/Image_1.png" alt="Me" style="width:50%">
+                      </div>
+                      <div class="col">
+                        <h2><b>Findings</b></h2>
+                        <p>The bar chat above is between the loan issued months(january,february,march) and loan ammount in percentage%</p>
+
+                          <p>1.During the month of January, we were able to locate all seven lost loans.</p>
+                          
+                          <p>2.In February, investors reduced loan amounts, resulting in a decrease in risky loans and no lost loans.</p>
+                          
+                          <p>3.Investors have increased the loan amount once more, but there has been no change in the risky loan, and the good news is that no new lost loans have been discovered in the month of March</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <h2><b>2.Box Plots on verified_income,interest rate and term </b></h2>
+                        <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_2.png" alt="Me" style="width:50%">
+                      </div>
+                      <div class="col">
+                        <h2><b>Findings</b></h2>
+                        <p>The box plot is between verified income and the interest rate.</p>
+
+                          <p>1.There are many borrowers with interest rates ranging from 10.5 to 17.5 
+                          whose income is verified,and only a few borrowers with interest rates 
+                          ranging from 9 to 15 whose income source is verified.</p>
+                          
+                          <p>2.When compared to Not verified and source verified, Verified borrowers has fewer outliers.
+                          
+                          </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <h2><b>3.Box Plots on interest rate and term </b></h2>
+                        <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_3.png" alt="Me" style="width:50%">
+                      </div>
+                      <div class="col">
+                        <h2><b>Findings</b></h2>
+                        <p>   The above box plot is between Term and the interest rate.</p>
+
+                          <p>1.The number of borrowers distributed over the given terms (36 months and 60 months) is nearly equal.</p>
+                          
+                          <p>2.We can find a high interest rate for borrowers with a 60-month term.</p>
+                          
+                          <p>3.We can also find a lot of outliners for a 36-month term.</p>
+                        </p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <h2><b>4.Scatter plot on interest rate and grade </b></h2>
+                        <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_4.png" alt="Me" style="width:50%">
+                      </div>
+                      <div class="col">
+                        <h2><b>Findings</b></h2>
+                        <p>This scatter plot is between Interest rate and grade.</p>
+
+                          <p>We can see from the plot above that as the borrower's grade rises, the interest rate rises automatically.</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <h2><b>5.Box plot on loan amount and Sub grade </b></h2>
+                        <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_5.png" alt="Me" style="width:50%">
+                      </div>
+                      <div class="col">
+                        <h2><b>Findings</b></h2>
+                       <p>1.From the above box plot, we can find that for every grade/subgrade the loan amount nearly ranges from 10k to 25k for maximum of brrowers.</p>
+
+                        <p>2.For E4 and F2 sub grade, the loan ammount equals/crossed 30k</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <h2><b>6.Line plot between loan amount and interest rate  </b></h2>
+                        <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_6.png" alt="Me" style="width:50%">
+                      </div>
+                      <div class="col">
+                        <h2><b>Findings</b></h2>
+                        <p>Even in the above line plot,</p> 
+
+                        <p>The loan amount is nearly the same for all interest rates, but when the interest rate is 30 or higher, the loan amount increased dramatically.</p>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="col">
+                        <h2><b>7.Bar plot on grade,Sub grade and loan status </b></h2>
+                        <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_7.png" alt="Me" style="width:50%">
+                      </div>
+                      <div class="col">
+                        <h2><b>Findings</b></h2>
+                        <p>From the above subplots,</p>
+
+                          <p>1.We discovered that the majority of current-loan-status borrowers are from grade B.</p>
+                          
+                          <p>2.As the grade progressed from B to G, the number of borrowers with current loan status decreased. </p> 
+
+                        
+                      </div>
+                    </div>
+
+
+
+                  </div>
+      </div>
+  <!-- code button Section -->
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="code"><b></b></h4>
+    <div class="w3-black w3-center w3-padding-24"><a href="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/Casestudy1.html" title="spaces" target="_blank" class="w3-hover-opacity"><b>Code(Case Study 1)</b></a>
+    </div>
+</div>
+
+<!--enhancements-->
+<div class="w3-row-padding w3-padding-16" id="Enhancements">
+  <div class="container">
+    <div class="row">
+      <div class="col">
+      </div>
+      <div class="col">
+        <h1><b>Enhancements</b></h1>
+       <h3>By adding the hypermeter and tweaking it,
+          we can improve the accuracy of the algorithm.
+           We could do more multidimensional plots for 
+           data visualization if we had more time to study the data.</h3>
+      </div>
+    </div> 
+  </div>
+</div>
+
+<!--2nd case study-->
+  <header id="Description(2)">
+    <span class="w3-button w3-hide-large w3-xxlarge w3-hover-text-grey" onclick="w3_open()"><i class="fa fa-bars"></i></span>
+    <div class="w3-container">
+    <h1><b>Case study 2</b></h1>
+    <h2><b>Description</b></h2>
+    <p>Dataset:<a href="https://www.dropbox.com/sh/xhy2fzjdvg3ykhy/AADAVKH9tgD_dWh6TZtOd34ia?dl=0">Visit Dataset here!!</a></p>
+    <p>The following data set contains
+       information on each employee's 
+       net revenue for the years 2015,
+        2016, and 2017. </p>
+    
+    
+  </div>
+
+  <!--visualization-->
+  </header>
+
+  <div class="w3-row-padding w3-padding-16" id="Data(2)">
+
+  
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+          <h1><b>Data Visualization</b></h1>
+         <h2><b>1.Box plot for year and net revenue</b></h2>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_8.png"alt="Me" style="width:50%">
+        </div>
+        <div class="col">
+          <h1><b>Findings</b></h1>
+          <p>The above graph shows that net revenue has remained constant over time.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2><b>2.Bar plot for existing customer revenue and years</b></h2>
+          <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_9.png" alt="Me" style="width:50%">
+        </div>
+        <div class="col">
+          <h2><b>Findings</b></h2>
+          <p>The revenue of existing customers has decreased dramatically from 2016 to 2017, as shown in the graph above.</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+          <h2><b>3.bar plot revenue lost from attrition vs years</b></h2>
+          <img src="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/image_10.png"alt="Me" style="width:50%">
+        </div>
+        <div class="col">
+          <h2><b>Findings</b></h2>
+          <p>As shown in the graph above, revenue attrition has decreased from 2016 to 2017.</p>
+        </div>
+      </div>
+     
+    </div>
+</div>
+
+  <div class="w3-container w3-padding-large w3-grey">
+    <h4 id="code(2)"><b></b></h4>
+    <div class="w3-black w3-center w3-padding-24"><a href="file:///C:/Users/Neha%20Gunnapaneni/OneDrive/Desktop/stout%20case%20studies/Casestudy2.html" title="spaces" target="_blank" class="w3-hover-opacity"><b>Code(Case Study 2)</b></a></div>
+
+ 
+  </div>
+
+  <!--enhancements-->
+  <div class="w3-row-padding w3-padding-16" id="Enhancements(2)">
+    <div class="container">
+      <div class="row">
+        <div class="col">
+        </div>
+        <div class="col">
+          <h1><b>Observations</b></h1>
+         <h3>1.Customers are increasing in number in 2017. 
+           As a result, for the first time, new customer revenue outpaced existing customer revenue.</h3>
+
+          <h3>2.The amount of money lost due to attrition has decreased
+          due to a significant increase in new customers in 2017.</h3>
+
+          <h3>3.We can also see a slight increase in lost customers over time.</h3>
+        </div>
+      </div>
+       
+        
+     
+    </div>
+ </div>
+
+  <!-- Footer -->
+ 
+
+<!-- End page content -->
+</div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+    document.getElementById("mySidebar").style.display = "block";
+    document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+    document.getElementById("mySidebar").style.display = "none";
+    document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>
